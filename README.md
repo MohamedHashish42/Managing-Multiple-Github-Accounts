@@ -127,6 +127,11 @@ git config user.name "[repo_corresponding_username]"
 
 </div>
 
+## Commands and configuration files
+
+- [All Configrations Files](https://github.com/MohamedHashish42/Managing-Multiple-Github-Accounts/blob/main/AllConfigrationsFiles.md)
+
+- [Commands Used In Each Section](https://github.com/MohamedHashish42/Managing-Multiple-Github-Accounts/blob/main/CommandsUsedInEachSection.md)
 
 ## References
 
