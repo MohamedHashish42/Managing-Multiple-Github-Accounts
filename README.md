@@ -4,10 +4,10 @@
 
 # Managing Multiple Github Accounts
 
-In this repo i will explain in details how to work with multiple Github accounts on a single device running **Windows** operating system using **SSH**.
+In this repo I will explain in detail how to work with multiple Github accounts on a single device running **Windows** operating system using **SSH**.
 
 Suppose this scenario :  
-We have two github accounts, one **personal** and the onther one for  **work** and want to setup our device to interact with both 2 accounts.
+We have two github accounts, one **personal** and the other one for  **work** and want to setup our device to interact with both 2 accounts.
 
 **Note**  
 Every single command and configuration file exists in this repo so read it carefully and then apply each step.
@@ -19,8 +19,8 @@ Every single command and configuration file exists in this repo so read it caref
 
 </div>
 
-## 2. Create SSH keys for each accounts
-### First we will need to create **.ssh** folder as the following
+## 2. Create SSH keys for each account
+### First, we will need to create **.ssh** folder as the following
 
 <div align="center">
 
@@ -28,7 +28,7 @@ Every single command and configuration file exists in this repo so read it caref
 
 </div>
 
-### Second Create SSH keys for each accounts
+### Then Create SSH keys for each account
 <div align="center">
 
 ![image](https://github.com/MohamedHashish42/Managing-Multiple-Github-Accounts/assets/81900786/df982f8c-1f55-4f9d-a5d4-db1e636d5019)
@@ -72,7 +72,7 @@ In this step we will copy our public key (that we have generated in our previous
 </div>
 
 ## 6. Add config file for each account
-Now we can clone repos from the 2 different accounts using to 2 hosts **(personal and work)** we defined 
+Now we can clone repos from the 2 different accounts using the 2 hosts **(personal and work)** we defined 
 in config file in .ssh folder.    
 
 For example if the ssh for a repo on the personal account is    
@@ -88,22 +88,22 @@ git clone personal:[your_user]/TestRepo.git
 But there an issue because for example if we make commit for any repo from any account
 we will find that commit was made by the user and email defined in global git config so we have 
 
-To solve this issue we have 2 options :
+To solve this issue we have Two options 
 
-### 2 Options to solve previous issue
-#### Setting needed config for each repo each time we clone it using the following 2 commands  
+### The two Options to solve previous issue
+#### Option1: Setting needed config for each repo each time we clone it using the following 2 commands  
 git config user.email "[repo_corresponding_email]"  
 git config user.name "[repo_corresponding_username]"  
 
-#### Creating folder and git config file for each account (Preferred)
-##### 1. Create folder for each account as the following
+#### Option 2: Creating a folder and git config file for each account (Preferred)
+##### - Create a folder for each account as the following
 <div align="center">
 
 ![image](https://github.com/MohamedHashish42/Managing-Multiple-Github-Accounts/assets/81900786/f11a7876-f678-4b27-938a-91da9b214bcb)
 
 </div>
 
-##### 2. Create git config file for each account as the following
+##### - Create git config file for each account as the following
 
 <div align="center">
 
@@ -112,7 +112,7 @@ git config user.name "[repo_corresponding_username]"
 </div>
 
 
-##### 3. Edit your global git config as the following
+##### - Edit your global git config as the following
 
 <div align="center">
   
@@ -120,7 +120,7 @@ git config user.name "[repo_corresponding_username]"
 
 </div>
 
-### Test that configs is added correctly
+##### - Test that configs are added correctly
 <div align="center">
   
 ![image](https://github.com/MohamedHashish42/Managing-Multiple-Github-Accounts/assets/81900786/cc8cbafd-488d-4331-807e-f3be6394db06)
