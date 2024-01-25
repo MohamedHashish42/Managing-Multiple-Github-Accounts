@@ -85,10 +85,8 @@ git clone git@personal:[your_user]/TestRepo.git
 git clone personal:[your_user]/TestRepo.git
 ```
 
-But there an issue because for example if we make commit for any repo from any account
-we will find that commit was made by the user and email defined in global git config so we have 
-
-To solve this issue we have Two options 
+But there an issue because for example if we make commit for any repo from any account we will find that commit was made 
+by the user and email defined in global git config so we have two options solve this issue we have Two options 
 
 ### The two Options to solve previous issue
 #### Option1: Setting needed config for each repo each time we clone it using the following 2 commands  
